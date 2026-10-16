@@ -1,0 +1,90 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #f4f1e8;
+  background: #1f4d36;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.lobby {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lobby form {
+  display: flex;
+  gap: 8px;
+}
+
+input,
+button {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: #e8b84a;
+  color: #1a1a1a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.error {
+  color: #ffb4a8;
+}
+
+.table header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.hand {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.card {
+  width: 80px;
+  height: 120px;
+  border-radius: 8px;
+  background: #fffdf6;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.3);
+}
+
+.card-number {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card-suit {
+  text-transform: capitalize;
+}
+
+.card-espada { color: #1f3c88; }
+.card-basto { color: #2e6b2e; }
+.card-oro { color: #b8860b; }
+.card-copa { color: #a32020; }
